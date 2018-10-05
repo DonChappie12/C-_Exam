@@ -1,0 +1,24 @@
+@model Activities
+<h1>@Model.Title</h1>
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>
+
+<a href="/home">Home</a>
+
+<form asp-action="Join" asp-controller="Home" method="POST">
+    <input type="submit" value="Join">
+</form>
+
+<h4>Event Cordinator:</h4>
+<p>@ViewBag.name</p>
+<br>
+<h4>Description:</h4>
+<p>@Model.Description</p>
+<br>
+<h5>Participants:</h5>
+@foreach(var jay in @Model.Joining)
+{
+    <p>@jay.user.FirstName</p>
+}

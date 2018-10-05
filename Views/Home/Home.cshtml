@@ -1,0 +1,56 @@
+@model User
+<h1>Dojo Activity Center</h1>
+<h3>Welcome @Model.FirstName @Model.LastName</h3>
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>Activity</th>
+            <th>Date and Time</th>
+            <th>Duration</th>
+            <th>Event Coordinator</th>
+            <th>Number of Participants</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var act in @ViewBag.activities){
+            bool joining = false;
+            <tr>
+                <td><a href="/activity/@act.Id">@act.Title</a></td>
+                <td>@act.Date.ToString("MM/dd/yyyy") at @act.Time</td>
+                <td>@act.Duration Hours</td>
+                <td>@act.user.FirstName</td>
+                <td>@act.Joining.Count</td>
+                @if(@ViewBag.id == @act.User_Id)
+                {
+                    <td><a href="/delete/@act.Id">Delete</a></td>
+                }
+                else
+                {
+                    @foreach(var g in @act.Joining)
+                    {
+                        if(@g.User_Id == @ViewBag.id)
+                        {
+                            joining = true;
+                        }
+                    }
+                    @if(joining==true)
+                    {
+                        <td><a href="/unjoin/@act.Id">Nevermind</a></td>
+                    }
+                    else
+                    {
+                        <td><a href="/join/@act.Id">Join</a></td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/New">Add New Activity!</a>

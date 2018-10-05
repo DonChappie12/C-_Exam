@@ -1,0 +1,11 @@
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/bin/Debug/netcoreapp2.0/c#_exam.deps.json
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/bin/Debug/netcoreapp2.0/c#_exam.runtimeconfig.json
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/bin/Debug/netcoreapp2.0/c#_exam.runtimeconfig.dev.json
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/bin/Debug/netcoreapp2.0/c#_exam.dll
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/bin/Debug/netcoreapp2.0/c#_exam.pdb
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/obj/Debug/netcoreapp2.0/c#_exam.csprojResolveAssemblyReference.cache
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/obj/Debug/netcoreapp2.0/c#_exam.csproj.CoreCompileInputs.cache
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/obj/Debug/netcoreapp2.0/c#_exam.AssemblyInfoInputs.cache
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/obj/Debug/netcoreapp2.0/c#_exam.AssemblyInfo.cs
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/obj/Debug/netcoreapp2.0/c#_exam.dll
+/Users/marthagonzalez/Documents/Coding_Dojo/c#/ASP/entity/c#_exam/obj/Debug/netcoreapp2.0/c#_exam.pdb

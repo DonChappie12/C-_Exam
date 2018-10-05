@@ -1,0 +1,31 @@
+<h1>Create Activity</h1>
+
+<form asp-action="Logout" asp-controller="Home" method="POST">
+    <input type="submit" value="Log off">
+</form>
+
+<a href="/home">Home</a>
+
+@model Activities
+<form asp-action="NewActivity" asp-controller="Home" method="POST">
+    <span asp-validation-for="Title"></span>
+    <p>Title: <input asp-for="Title"></p>
+
+    <span asp-validation-for="Time"></span>
+    <p>Time: <input asp-for="Time"></p>
+
+    <span asp-validation-for="Date"></span>
+    <h5>@ViewBag.date</h5>
+    <p>Date: <input asp-for="Date"></p>
+
+    <span asp-validation-for="Duration"></span>
+    <p>Duration: <input asp-for="Duration"></p>
+
+    <span asp-validation-for="Description"></span>
+    <br>
+    <label>Description</label>
+    <br>
+    <textarea name="Description" placeholder="Write description..." cols="30" rows="10"></textarea>
+    <br>
+    <button>Create Activity</button>
+</form>
